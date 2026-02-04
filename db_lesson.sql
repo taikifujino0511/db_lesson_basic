@@ -1,3 +1,4 @@
+-- Q1
 CREATE TABLE `departments`(
   department_id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
   name VARCHAR(20) NOT NULL,
