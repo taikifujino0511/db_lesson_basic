@@ -53,4 +53,4 @@ UPDATE people SET department_id = 4 where person_id = 6;
 -- Q5
 SELECT p.name AS pn, p.age AS pa FROM people AS p
 WHERE p.gender = 1
-ORDER BY p.age DESC;
+ORDER BY p.age ASC;
