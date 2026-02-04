@@ -41,3 +41,10 @@ INSERT INTO reports (person_id, content) VALUES
 (8, '経理部の中村彩です。月次決算の準備をしています。'),
 (9, '人事部の小林翔太です。新入社員の研修計画を立てています。'),
 (10, '情報システム部の加藤真由美です。社内ネットワークの監視を強化しています。');
+
+-- Q4
+UPDATE people SET department_id = 1 where person_id = 1;
+UPDATE people SET department_id = 2 where person_id = 2;
+UPDATE people SET department_id = 2 where person_id = 3;
+UPDATE people SET department_id = 3 where person_id = 4;
+UPDATE people SET department_id = 4 where person_id = 6;
