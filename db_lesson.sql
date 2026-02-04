@@ -18,6 +18,7 @@ INSERT INTO departments (name) VALUES
 ('人事'),
 ('情報システム');
 --- pepole
+---- '1が男、2が女'
 INSERT INTO people (name, email, department_id, age, gender) VALUES
 ('佐藤 太郎', 'taro.sato@example.local', 1, 30, 1),
 ('鈴木 花子', 'hanako.suzuki@example.local', 1, 25, 2),
@@ -48,3 +49,8 @@ UPDATE people SET department_id = 2 where person_id = 2;
 UPDATE people SET department_id = 2 where person_id = 3;
 UPDATE people SET department_id = 3 where person_id = 4;
 UPDATE people SET department_id = 4 where person_id = 6;
+
+-- Q5
+SELECT p.name AS pn, p.age AS pa FROM people AS p
+WHERE p.gender = 1
+ORDER BY p.age DESC;
