@@ -7,11 +7,4 @@ CREATE TABLE `departments`(
 );
 
 -- Q2
-ALTER TABLE departments ADD person_id INT(10) UNSIGNED FIRST;
-ALTER TABLE departments ADD name VARCHAR(20) AFTER person_id;
-ALTER TABLE departments ADD email VARCHAR(255) NOT NULL UNIQUE AFTER name;
-ALTER TABLE departments MODIFY department_id INT(10) UNSIGNED NOT NULL COMMENT 'emailの後ろに追加する' AFTER email;
-ALTER TABLE departments ADD age TINYINT(3) UNSIGNED NOT NULL AFTER department_id;
-ALTER TABLE departments ADD gender TINYINT(4) NOT NULL AFTER age;
-ALTER TABLE departments MODIFY created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP AFTER gender;
-ALTER TABLE departments MODIFY updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP AFTER created_at; 
+ALTER TABLE people ADD department_id INT(10) UNSIGNED COMMENT 'emailの後ろに追加する' AFTER email;
