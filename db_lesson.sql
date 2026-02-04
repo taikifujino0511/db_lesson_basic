@@ -54,3 +54,7 @@ UPDATE people SET department_id = 4 where person_id = 6;
 SELECT p.name AS pn, p.age AS pa FROM people AS p
 WHERE p.gender = 1
 ORDER BY p.age ASC;
+
+-- Q6
+--- Q: テーブル・レコード・カラムという3つの単語を適切に使用して、下記のSQL文を日本語で説明してください。
+--- A: peopleテーブルから、部署が営業のレコードを取得し、名前とメールと年齢のカラムを表示し、作成日の降順で並び替えています。
